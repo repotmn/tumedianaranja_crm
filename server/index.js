@@ -65,4 +65,5 @@ app.get("/empresas", (req,res) => {
 
 //Para importaciones se agrega 'type':'module'
 // Para requerimeintos se agrega ''type':'commonjs'
+//agregamos otra cosa 
 
