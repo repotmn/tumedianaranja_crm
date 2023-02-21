@@ -8,10 +8,10 @@ function Orden () {
 // Estas constantes tiene como funcion ofrecer un valor a los fonos de la empresa y contactos para
 // realizar la funcion del copiar el numero de telefono dentro de los inputs
 // haciendo click en el icono de portapapeles (Motivo: testeo de la funcion de la copia).
-  const [value,setValue] =   useState("+65959584534")
-  const [value2,setValue2] = useState("+89437534124")
-  const [value3,setValu3] =  useState("+65959584578")
-  const [value4,setValue4] = useState("+89437534656")
+  const [value,setValue] =   useState("")
+  const [value2,setValue2] = useState("")
+  const [value3,setValu3] =  useState("")
+  const [value4,setValue4] = useState("")
 
   return (
 <>

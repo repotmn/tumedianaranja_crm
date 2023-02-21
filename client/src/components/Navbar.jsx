@@ -30,7 +30,11 @@ function Navbar() {
                  icono dropdown de opciones*/}
                 <div className="box-perfil" >
                     <img className = "perfil img-fluid" src = {perfil} style={{height: "60px",width: "60px"}}></img>
-                      <p className = "nombre">Nombre y apellido</p>
+                    <div>
+                    {ejecutivo.map((ejecutivo) => (
+                      <h1 className ="titulo" style={{color: "white"}}>{ejecutivo.nombre_ejecutivo} {ejecutivo.apellido_ejecutivo}</h1>
+                    ))}
+                    </div>
                       <a href="#" className="nav-link "data-bs-toggle="dropdown">
                         <SlOptionsVertical style={{color:"white" ,height: "30px",width: "30px"}} />
                       </a>
