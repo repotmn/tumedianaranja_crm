@@ -5,7 +5,6 @@ import Modals from '../components/Modals';
 function Formulario(){
     // Variables para UseState
     const [empresas, setEmpresas] = useState([])
-    const [ejecutivos, setEjecutivos] = useState([])
     // Funcion para hacer request de nuestra API
     const fetchEmpresas = () => {
       fetch("http://localhost:8800/empresas")
@@ -13,16 +12,9 @@ function Formulario(){
         .then(emp => setEmpresas(emp))
         .catch(error => console.log(error))
     }
-    const fetchEjecutivos = () => {
-      fetch("http://localhost:8800/ejecutivos")
-        .then(response => response.json())
-        .then(ejec => setEjecutivos(ejec))
-        .catch(error => console.log(error))
-    }
-  
+  // Llamamos a los metodos fetch
     useEffect(() => {
       fetchEmpresas()
-      fetchEjecutivos()
     }, [])
   return (
     <>
@@ -68,7 +60,9 @@ function Formulario(){
           <tbody >
             <tr>
               <th>SII - RUBRO ECONÓMICO</th>
-              <td></td>
+              <div>
+              <td>asdasdasd</td>
+              </div>
             </tr>
             <tr>
               <th>SII - SURUBRO ECONÓMICO</th>
