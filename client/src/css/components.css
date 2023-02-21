@@ -1,6 +1,11 @@
-
+*{
+    padding: 0;
+    margin: 0;
+}
 /***************************CSS - Navbar***************************/
 .perfil {
+    height: 60px;
+    width: 60px;
     border-radius: 50px;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -54,15 +59,21 @@ h2.titulo{
 
 
 button.btn-secondary{
+    background-color: #e44c1c;
+    border: black solid 2px;
     margin-top: 25%;
     margin-left: 25%;
 }
 button.btn-success{
+    background-color: #e44c1c;
+    border: black solid 2px;
     margin-left: 85%;
     margin-top: 3%;
 }
-
-/***************************CSS - Formulario2***************************/
+button.btn-primary{
+    background-color: #e44c1c;
+    border: black solid 2px;
+}
 
 div.d-grid{
     margin-top: 3%;
@@ -74,36 +85,11 @@ div.row{
 
 }
 
-button.btn{
-    background-color: #e44c1c;
-    border:solid 1px black;
+.campaña{
+     border-bottom:solid 1px gray;
 }
+
 /***************************CSS - Inputs***************************/
-
-.control1{
-    width: 320px;
-    background: white;
-    border-radius: 4px;
-    margin-bottom: 12px;
-    border: 2px solid #3e3b32;
-    font-family: 'calibri';
-    font-size: 20px;
-    border:none;
-    border-bottom:1px solid #c2c2c2;
-    height: 20px;
-}
-
-.control2{
-    width: 200px;
-    background: white;
-    border-radius: 4px;
-    margin-bottom: 12px;
-    border: 2px solid #3e3b32;
-    font-family: 'calibri';
-    font-size: 18px;
-    border:none;
-    border-bottom:1px solid #c2c2c2;
-}
   
 .control-contacto{
     width: 300px;
@@ -114,6 +100,7 @@ button.btn{
     font-family: 'calibri';
     font-size: 18px;
 }
+
 
 .control-busqueda-rut{
     width: 150px;
@@ -134,12 +121,12 @@ button.btn{
     font-family: 'calibri';
     font-size: 18px;
 }
- 
+
+  
 .select{
     width: 230px;
     background: white;
     border-radius: 4px;
-    margin-bottom: 16px;
     border: 2px solid #3e3b32;
     font-family: 'calibri';
     font-size: 18px;
@@ -147,10 +134,11 @@ button.btn{
 
 
 /***************************CSS - label***************************/
-label{ 
+label,h6{ 
     text-transform: uppercase;
     font-size: 15px;
     font-weight: bold;
+    padding-right: 5px;
 }
 
 /***************************CSS - Orden***************************/
@@ -173,4 +161,80 @@ table.table-responsive{
 th{ 
     text-transform: uppercase;
     font-size: 15px;
+}
+
+.btn.btn-outline-light{
+    color: black;
+    padding: inherit;
+}
+
+/***************************Tabla de informacion de la  empresa o lead***************************/
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: 20px;
+}
+
+.content-table tbody th {
+    width: 250px;
+}
+
+.content-table th,.content-table td {
+    padding: 5px ;
+}
+
+.content-table tbody td {
+    border-bottom: 1px solid gray;
+    width: 250px;
+}
+
+/***************************Tabla de rut y razon social de la  empresa o lead***************************/
+.content-table2 {
+    border-collapse: collapse;
+    min-width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.content-table2 th,.content-table td {
+    padding: 5px ;
+}
+
+.content-table2 tbody td {
+    border-bottom: 1px solid gray;
+    width: 250px;
+}
+
+
+/***************************Tabla de fono de la empresa o lead***************************/
+.container-table{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+.content-table-fono{
+    padding-top: 10px;
+}
+
+.content-table-fono th, .content-table-fono td {
+    padding: 5px;
+}
+
+td.td-fono {
+    border-bottom: 1px solid gray;
+    width: 250px;
+}
+
+.capsula{
+    border: 2px solid #3e3b32;
+    border-radius: 20px;
+    padding: 40px;
 }
