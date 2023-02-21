@@ -1,0 +1,176 @@
+
+/***************************CSS - Navbar***************************/
+.perfil {
+    border-radius: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 10px;
+}
+
+.formulario{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom:solid 1px gray;
+}
+
+
+.box{
+    border:solid 1px black;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 20px;
+}
+
+.box-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    background-color:#252440;
+    border:solid 1px gray;
+}
+
+.nombre{
+    color: white;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+h2.titulo{
+    padding-right: 35px;
+}
+
+/***************************CSS - Formulario.Modals***************************/
+
+.modal-header{
+    background-color:#252440;
+    color: aliceblue;
+}
+
+.icono{
+    padding-right: 10px;
+}
+
+
+button.btn-secondary{
+    margin-top: 25%;
+    margin-left: 25%;
+}
+button.btn-success{
+    margin-left: 85%;
+    margin-top: 3%;
+}
+
+/***************************CSS - Formulario2***************************/
+
+div.d-grid{
+    margin-top: 3%;
+}
+
+div.row{
+    margin-left: 10px;
+    overflow: hidden;
+
+}
+
+button.btn{
+    background-color: #e44c1c;
+    border:solid 1px black;
+}
+/***************************CSS - Inputs***************************/
+
+.control1{
+    width: 320px;
+    background: white;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    border: 2px solid #3e3b32;
+    font-family: 'calibri';
+    font-size: 20px;
+    border:none;
+    border-bottom:1px solid #c2c2c2;
+    height: 20px;
+}
+
+.control2{
+    width: 200px;
+    background: white;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    border: 2px solid #3e3b32;
+    font-family: 'calibri';
+    font-size: 18px;
+    border:none;
+    border-bottom:1px solid #c2c2c2;
+}
+  
+.control-contacto{
+    width: 300px;
+    background: white;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    border: 2px solid #3e3b32;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.control-busqueda-rut{
+    width: 150px;
+    background: white;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    border: 2px solid #3e3b32;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.control-busqueda-razon{
+    width: 750px;
+    background: white;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    border: 2px solid #3e3b32;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+ 
+.select{
+    width: 230px;
+    background: white;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 2px solid #3e3b32;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+
+/***************************CSS - label***************************/
+label{ 
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/***************************CSS - Orden***************************/
+.tipificacion{
+    border-top: 2px solid #3e3b32;
+}
+
+.siguiente{
+    padding-right: 20px;
+    padding-bottom: 2%;
+}
+
+table.table-responsive{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: block;
+    overflow: auto;
+}
+
+th{ 
+    text-transform: uppercase;
+    font-size: 15px;
+}
