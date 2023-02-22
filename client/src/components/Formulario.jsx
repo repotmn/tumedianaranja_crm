@@ -25,22 +25,22 @@ function Formulario(){
           <div className="row align-items-center">
             {/* Este col contiene el rut y razon social del lead o empresa*/}
 
-            {empresas.map((empresa, rut_empresa) => (
+            {empresas.map((empresa) => (
               <div className="col">
               <table className="content-table2">
                 <tbody>
                   <tr>
                     <th>Rut</th>
-                    <td key={rut_empresa}>{empresa.rut_empresa}</td>
+                    <td>{empresa.rut_empresa}</td>
                   </tr>
                   <tr>
                     <th>Razon social</th>
-                    <td key={rut_empresa}>{empresa.razon_social}</td>
+                    <td>{empresa.razon_social}</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-              ))}
+          ))}
             
             {/* Este col contiene el label e input de campaña, con el enlace "cambiar" con 
             el proposito de cambiar campaña*/}
@@ -59,50 +59,58 @@ function Formulario(){
           </div>
         </div>
       {/* En este div "container-fluid" contiene la informacion del lead o empresa, cada uno con su label e input*/}
+      {empresas.map((empresa) => (
       <div className="container-fluid">
        <table className="content-table">
           <tbody >
             <tr>
               <th>SII - RUBRO ECONÓMICO</th>
               <div>
-              <td></td>
+              <td>{empresa.rubro_economico}</td>
               </div>
             </tr>
             <tr>
               <th>SII - SURUBRO ECONÓMICO</th>
-              <td></td>
+              <td>{empresa.sub_rubro_economico}</td>
             </tr>
             <tr>
               <th>SII - ACTIVIDAD ECONÓMICA</th>
-              <td></td>
+              <td>{empresa.actividad_economica}</td>
             </tr>
             <tr>
               <th>SII - REGIÓN</th>
-              <td></td>
+              <td>{empresa.region}</td>
             </tr>
             <tr>
               <th>SII - PROVINCIA</th>
-              <td></td>
+              <td>{empresa.provincia}</td>
             </tr>
             <tr>
               <th>SII - COMUNA</th>
-              <td></td>
+              <td>
+                <input type="text" value={empresa.comuna}/> 
+              </td>
             </tr>
             <tr>
               <th>INICIO DE ACTIVIDADES</th>
-              <td></td>
+              <td>
+                <input type="text" value={empresa.fecha_inicio_actividad}/> 
+              </td>
             </tr>
             <tr>
               <th>SII - TAMAÑO</th>
-              <td></td>
+              <td>
+               <input type="text" value={empresa.tamano_empresa} /> </td>
             </tr>
             <tr>
               <th>SII- TRABAJADORES</th>
-              <td></td>
+              <td>
+               <input type="text" value={empresa.cantidad_trabajadores} /></td>
             </tr> 
           </tbody>
         </table>
       </div>
+      ))}
     </>
   )
 }

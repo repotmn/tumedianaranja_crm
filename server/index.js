@@ -56,7 +56,7 @@ app.get("/ejecutivos", (req,res) => {
 
 // Metodo para llenar orden
 app.get("/empresas", (req,res) => {
-    const q = "SELECT `rut_empresa`, `razon_social`, `rubro_economico`, `sub_rubro_economico`, `actividad_economica`, `region`, `provincia`, `comuna`, `fecha_inicio_actividad`, `tamano_empresa`, `cantidad_trabajadores`, `nombre_apellido_contacto`, `telefono_fijo_contacto`, `telefono_movil_contacto`, `mail_contacto`, `nivel_decision`, `area_decision` FROM empresa JOIN contacto ON empresa.rut_empresa = contacto.rut_empresa_contacto ORDER BY `empresa`.`rut_empresa` ASC"
+    const q = "SELECT `id_empresa`,`rut_empresa`, `razon_social`, `rubro_economico`, `sub_rubro_economico`, `actividad_economica`, `region`, `provincia`, `comuna`, `fecha_inicio_actividad`, `tamano_empresa`, `cantidad_trabajadores`, `nombre_apellido_contacto`, `telefono_fijo_contacto`, `telefono_movil_contacto`, `mail_contacto`, `nivel_decision`, `area_decision` FROM empresa JOIN contacto ON empresa.rut_empresa = contacto.rut_empresa_contacto ORDER BY RAND() LIMIT 1"
     db.query(q,(err,data) => {
         if(err) return res.json(err)
         return res.json(data)
