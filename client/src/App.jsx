@@ -33,7 +33,6 @@ function App() {
     <>
       <Navbar />
       <Formulario />
-      <Orden />
     </>
 
   )
