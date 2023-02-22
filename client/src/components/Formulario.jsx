@@ -71,7 +71,8 @@ function Formulario(){
             </tr>
             <tr>
               <th>SII - SURUBRO ECONÓMICO</th>
-              <td>{empresa.sub_rubro_economico}</td>
+              <td>  
+                {empresa.sub_rubro_economico}</td>
             </tr>
             <tr>
               <th>SII - ACTIVIDAD ECONÓMICA</th>
@@ -79,7 +80,9 @@ function Formulario(){
             </tr>
             <tr>
               <th>SII - REGIÓN</th>
-              <td>{empresa.region}</td>
+              <td>
+                {empresa.region}
+              </td>
             </tr>
             <tr>
               <th>SII - PROVINCIA</th>
