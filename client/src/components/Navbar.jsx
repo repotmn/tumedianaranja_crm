@@ -32,7 +32,7 @@ function Navbar() {
                     <img className = "perfil img-fluid" src = {perfil} style={{height: "60px",width: "60px"}}></img>
                     <div>
                     {ejecutivo.map((ejecutivo) => (
-                      <h1 className ="titulo" style={{color: "white"}}>{ejecutivo.nombre_ejecutivo} {ejecutivo.apellido_ejecutivo}</h1>
+                      <h5 className ="titulo" style={{color: "white"}}>{ejecutivo.nombre_ejecutivo} {ejecutivo.apellido_ejecutivo}</h5>
                     ))}
                     </div>
                       <a href="#" className="nav-link "data-bs-toggle="dropdown">

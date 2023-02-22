@@ -88,24 +88,26 @@ function Formulario(){
             <tr>
               <th>SII - COMUNA</th>
               <td>
-                <input type="text" value={empresa.comuna}/> 
+                {empresa.comuna}
               </td>
             </tr>
             <tr>
               <th>INICIO DE ACTIVIDADES</th>
               <td>
-                <input type="text" value={empresa.fecha_inicio_actividad}/> 
+                {empresa.fecha_inicio_actividad}
               </td>
             </tr>
             <tr>
               <th>SII - TAMAÑO</th>
               <td>
-               <input type="text" value={empresa.tamano_empresa} /> </td>
+               {empresa.tamano_empresa}
+               </td>
             </tr>
             <tr>
               <th>SII- TRABAJADORES</th>
               <td>
-               <input type="text" value={empresa.cantidad_trabajadores} /></td>
+               {empresa.cantidad_trabajadores}
+               </td>
             </tr> 
           </tbody>
         </table>
