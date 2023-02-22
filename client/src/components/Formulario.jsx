@@ -24,20 +24,24 @@ function Formulario(){
         <div className="container-fluid">
           <div className="row align-items-center">
             {/* Este col contiene el rut y razon social del lead o empresa*/}
-            <div className="col">
+
+            {empresas.map((empresa, rut_empresa) => (
+              <div className="col">
               <table className="content-table2">
                 <tbody>
                   <tr>
                     <th>Rut</th>
-                    <td></td>
+                    <td key={rut_empresa}>{empresa.rut_empresa}</td>
                   </tr>
                   <tr>
                     <th>Razon social</th>
-                    <td></td>
+                    <td key={rut_empresa}>{empresa.razon_social}</td>
                   </tr>
                 </tbody>
               </table>
             </div>
+              ))}
+            
             {/* Este col contiene el label e input de campaña, con el enlace "cambiar" con 
             el proposito de cambiar campaña*/}
             <div className="col text-center">
@@ -61,7 +65,7 @@ function Formulario(){
             <tr>
               <th>SII - RUBRO ECONÓMICO</th>
               <div>
-              <td>asdasdasd</td>
+              <td></td>
               </div>
             </tr>
             <tr>
@@ -95,15 +99,7 @@ function Formulario(){
             <tr>
               <th>SII- TRABAJADORES</th>
               <td></td>
-            </tr>
-            <tr>
-              <th>DATO COMPLEMENTARIO</th>
-              <td></td>
-            </tr>
-            <tr>
-              <th>CATEGORIA TMN</th>
-              <td></td>
-            </tr>
+            </tr> 
           </tbody>
         </table>
       </div>
