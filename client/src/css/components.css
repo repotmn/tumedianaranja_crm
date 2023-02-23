@@ -163,10 +163,11 @@ th{
     font-size: 15px;
 }
 
-.btn.btn-outline-light{
+.btn.btn-light{
     color: black;
     padding: inherit;
 }
+
 
 /***************************Tabla de informacion de la  empresa o lead***************************/
 

@@ -137,7 +137,7 @@ function Formulario() {
                   <th>Fono empresa 1</th>
                   <td className='td-fono'>{empresa.telefono_fijo_contacto}</td>
                   <td><CopyToClipboard text={empresa.telefono_fijo_contacto}>
-                    <button className="btn btn-outline-light" id="button-addon2"><HiOutlineClipboardDocumentList style={{ height: "25px", width: "25px" }}></HiOutlineClipboardDocumentList></button>
+                    <button className="btn btn-light" id="button-addon2"><HiOutlineClipboardDocumentList style={{ height: "25px", width: "25px" }}></HiOutlineClipboardDocumentList></button>
                   </CopyToClipboard></td>
                   <th>tipificación</th>
                   <td ><select className="select" style={{ width: "190px" }}>
@@ -168,7 +168,7 @@ function Formulario() {
                   <th>Fono empresa 2</th>
                   <td className='td-fono'>{empresa.telefono_movil_contacto}</td>
                   <td><CopyToClipboard text={empresa.telefono_movil_contacto}>
-                    <button className="btn btn-outline-light" id="button-addon2"><HiOutlineClipboardDocumentList style={{ height: "25px", width: "25px" }}></HiOutlineClipboardDocumentList></button>
+                    <button className="btn btn-light" id="button-addon2"><HiOutlineClipboardDocumentList style={{ height: "25px", width: "25px" }}></HiOutlineClipboardDocumentList></button>
                   </CopyToClipboard>
                   </td>
                   <th>tipificación</th>
@@ -222,12 +222,12 @@ function Formulario() {
                   <td>
                   {empresa.telefono_movil_contacto}
                     <CopyToClipboard text={empresa.telefono_movil_contacto}>
-                      <button className="btn btn-outline-light" id="button-addon2"><HiOutlineClipboardDocumentList style={{ height: "25px", width: "25px" }}>{empresa.telefono_movil_contacto}</HiOutlineClipboardDocumentList></button>
+                      <button className="btn btn-light" id="button-addon2"><HiOutlineClipboardDocumentList style={{ height: "25px", width: "25px" }}>{empresa.telefono_movil_contacto}</HiOutlineClipboardDocumentList></button>
                     </CopyToClipboard></td>
                   <td>
                     {empresa.telefono_fijo_contacto}
                     <CopyToClipboard text={empresa.telefono_fijo_contacto}>
-                      <button className="btn btn-outline-light" id="button-addon2"><HiOutlineClipboardDocumentList style={{ height: "25px", width: "25px" }}>{empresa.telefono_fijo_contacto}</HiOutlineClipboardDocumentList></button>
+                      <button className="btn btn-light" id="button-addon2"><HiOutlineClipboardDocumentList style={{ height: "25px", width: "25px" }}>{empresa.telefono_fijo_contacto}</HiOutlineClipboardDocumentList></button>
                     </CopyToClipboard>
                   </td>
                   <td><select className="select" style={{ width: "190px" }}>
