@@ -9,7 +9,7 @@ function Navbar() {
   const [ejecutivo, setEjecutivo] = useState([])
   // Funcion para hacer request de nuestra API
   const fetchEjecutivo = () => {
-      fetch("http://localhost:8800/ejecutivo")
+      fetch("http://localhost:8800/ejecutivos")
         .then(response => response.json())
         .then(ejec => setEjecutivo(ejec))
         .catch(error => console.log(error))
