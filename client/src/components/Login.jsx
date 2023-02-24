@@ -36,7 +36,7 @@ function Login() {
 
             </div>
             <div>
-              <p className="mb-0">No tienes una cuenta? <a href="#!" className="text-white-50 fw-bold">Registrarse</a>
+              <p className="mb-0">¿No tienes una cuenta? <a href="#!" className="text-white-50 fw-bold">Registrarse</a>
               </p>
             </div>
           </div>
