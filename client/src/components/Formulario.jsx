@@ -18,7 +18,10 @@ function Formulario() {
   useEffect(() => {
     fetchEmpresas()
   }, [])
-
+  // Funcion que realiza el refresh de una pagina
+  const handleRefresh = () => {
+    window.location.reload();
+  };
 
   return (
     <>
@@ -255,7 +258,7 @@ function Formulario() {
       {/*En este col contiene el boton "siguiente"*/}
       <div className="col-md d-flex justify-content-end">
         <div className="siguiente" >
-          <button type="submit" className="btn btn-primary" href="/prospeccion">Siguiente</button>
+          <button type="submit" className="btn btn-primary" href="/prospeccion" onClick={handleRefresh} >Siguiente</button>
         </div>
       </div>
     </>

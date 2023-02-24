@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Logo from '../assets/Logo.png';
 import '../css/login.css';
+import {Link} from 'react-router-dom';
 
 function Login() {
 
@@ -26,7 +27,7 @@ function Login() {
               </div>
               <p className="small mb-5 pb-lg-2"><a className="text-white-50" href="#!">Olvidaste tu password?</a></p>
 
-              <button className="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+              <Link className="btn btn-outline-light btn-lg px-5" type="submit" to ="/prospeccion">Login</Link>
 
               <div className="d-flex justify-content-center text-center mt-4 pt-1">
                 <a href="#!" className="text-white"><i className="fab fa-facebook-f fa-lg"></i></a>
