@@ -153,9 +153,6 @@ label,h6{
 
 table.table-responsive{
     margin-top: 10px;
-    margin-left: 20px;
-    display: block;
-    overflow: auto;
 }
 
 th{ 
@@ -165,19 +162,19 @@ th{
 
 .btn.btn-light{
     color: black;
-    padding: inherit;
+    padding: 0;
 }
 
 /***************************Tabla de informacion de la  empresa o lead***************************/
 
 .content-table {
-    border-collapse: collapse;
     margin: 25px 0;
     min-width: 400px;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     margin-left: 20px;
+    
 }
 
 .content-table tbody th {
@@ -191,6 +188,7 @@ th{
 .content-table tbody td {
     border-bottom: 1px solid gray;
     width: 250px;
+    white-space: nowrap;
 }
 
 /***************************Tabla de rut y razon social de la  empresa o lead***************************/
@@ -215,7 +213,6 @@ th{
 .container-table{
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
     padding-left: 30px;
     padding-right: 30px;
 
@@ -233,8 +230,10 @@ td.td-fono {
     width: 250px;
 }
 
-.capsula{
-    border: 2px solid #3e3b32;
-    border-radius: 20px;
-    padding: 40px;
+.content-table-contacto th{
+    white-space: nowrap;
+}
+
+td.contacto-fono{
+    white-space: nowrap;
 }

@@ -3,6 +3,7 @@ import '../css/components.css';
 import Modals from '../components/Modals';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
+import Logo2 from "../assets/Logo-centro.png"
 
 function Formulario() {
   // Variables para UseState
@@ -30,31 +31,21 @@ function Formulario() {
       <div className="formulario">
         <div className="container-fluid">
           <div className="row align-items-center">
-            {/* Este col contiene el rut y razon social del lead o empresa*/}
-
-            {empresas.map((empresa) => (
-              <div className="col">
-                <table className="content-table2">
-                  <tbody>
-                    <tr>
-                      <th>Rut</th>
-                      <td>{empresa.rut_empresa}</td>
-                    </tr>
-                    <tr>
-                      <th>Razon social</th>
-                      <td>{empresa.razon_social}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            ))}
-
-            {/* Este col contiene el label e input de campaña, con el enlace "cambiar" con 
+            {/* Este col contiene la tabla de campaña, con el enlace "cambiar" con 
             el proposito de cambiar campaña*/}
-            <div className="col text-center">
-              <h6>Campaña</h6>
-              <p className='campaña' style={{ marginLeft: "60px", marginRight: "60px" }}></p>
-              <a href="">Cambiar</a>
+            <div className="col">
+              <table>
+                <tbody>
+                  <tr>
+                    <th style={{paddingRight:"15px"}}>Campaña</th>
+                    <td className="text-center" style={{width:"300px", borderBottom:"2px solid gray"}}></td>
+                    <td><a href="" style={{paddingLeft:"15px"}}>Cambiar</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="col d-flex justify-content-center">
+              <img src={Logo2} alt="" style={{width:"250px", marginLeft:"60px"}} />
             </div>
             {/* Este col contiene el componente Modals, que muestra el boton guardar y el 
             boton acciones que contiente los modals de ingreso de contacto a+ y llamadas pendientes 
@@ -71,10 +62,16 @@ function Formulario() {
           <table className="content-table">
             <tbody >
               <tr>
+                  <th>Rut</th>
+                  <td>{empresa.rut_empresa}</td>
+              </tr>
+                  <tr>
+                    <th>Razon social</th>
+                    <td>{empresa.razon_social}</td>
+                  </tr>
+              <tr>
                 <th>SII - RUBRO ECONÓMICO</th>
-                <div>
                   <td>{empresa.rubro_economico}</td>
-                </div>
               </tr>
               <tr>
                 <th>SII - SURUBRO ECONÓMICO</th>
@@ -132,7 +129,7 @@ function Formulario() {
       </div>
 
       <div className="tipificacion">
-        <div className="container-table text-nowrap">
+        <div className="container-table mt-2">
           {empresas.map((empresa) => (
             <table className="content-table-fono" >
               <tbody>
@@ -196,12 +193,11 @@ function Formulario() {
               </tbody>
             </table>
           ))}
-
-
         </div>
+
         {empresas.map((empresa) => (
           <div className="container-fluid mt-5">
-            <table className="table table-responsive table-bordered">
+            <table className="table content-table-contacto table-responsive table-bordered">
               {/*En este thead se ubica los nombres de la informacion del contacto a tipificar*/}
               <thead className="table-warning">
                 <tr>
@@ -216,18 +212,18 @@ function Formulario() {
                 </tr>
               </thead>
               {/*En este tbody contiene los espacios de datos para cada nombre que esta ubicado en el thead*/}
-              <tbody className=" table-group-divider ">
+              <tbody className=" table-group-divider gx-0">
                 <tr>
                   <td>{empresa.nombre_apellido_contacto}</td>
                   <td>{empresa.nivel_decision}</td>
                   <td>{empresa.area_decision}</td>
                   <td>{empresa.mail_contacto}</td>
-                  <td>
+                  <td className="contacto-fono">
                   {empresa.telefono_movil_contacto}
                     <CopyToClipboard text={empresa.telefono_movil_contacto}>
                       <button className="btn btn-light" id="button-addon2"><HiOutlineClipboardDocumentList style={{ height: "25px", width: "25px" }}>{empresa.telefono_movil_contacto}</HiOutlineClipboardDocumentList></button>
                     </CopyToClipboard></td>
-                  <td>
+                  <td className="contacto-fono">
                     {empresa.telefono_fijo_contacto}
                     <CopyToClipboard text={empresa.telefono_fijo_contacto}>
                       <button className="btn btn-light" id="button-addon2"><HiOutlineClipboardDocumentList style={{ height: "25px", width: "25px" }}>{empresa.telefono_fijo_contacto}</HiOutlineClipboardDocumentList></button>
@@ -246,7 +242,7 @@ function Formulario() {
                     <option value="sin_datos">Sin datos</option>
                   </select>
                   </td>
-                  <td ></td>
+                  <td></td>
                 </tr>
               </tbody>
             </table>
