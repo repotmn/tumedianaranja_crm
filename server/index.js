@@ -38,7 +38,7 @@ app.get("/", (req,res)=>{
 
 // API ejecutivos
 app.get("/ejecutivos", (req,res) => {
-    const q = " select nombre_ejecutivo, apellido_ejecutivo from ejecutivo where login = 'crivera'"
+    const q = " select nombre_ejecutivo, apellido_ejecutivo from ejecutivo"
     db.query(q,(err,data) => {
         if(err) return res.json(err)
         return res.json(data)
