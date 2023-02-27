@@ -212,7 +212,7 @@ function Formulario() {
                 </tr>
               </thead>
               {/*En este tbody contiene los espacios de datos para cada nombre que esta ubicado en el thead*/}
-              <tbody className=" table-group-divider gx-0">
+              <tbody className=" table-group-divider gx-0" style={{borderBottom:"3px solid black"}}>
                 <tr>
                   <td>{empresa.nombre_apellido_contacto}</td>
                   <td>{empresa.nivel_decision}</td>
