@@ -28,11 +28,12 @@ const db = mysql.createConnection({
     database: 'tumedianaranja'
 })
 app.use(cors())
+app.use('/crm', routes())
 
 
 //------------------------------------ Routes --------------------------------------------------
 // Metodo obtencion de aplicacion backend
-app.get("/", (req,res)=>{
+app.get("/crm", (req,res)=>{
     res.json("Hola esto es un mensaje del backend")
 })
 
